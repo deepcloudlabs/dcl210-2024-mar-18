@@ -1,5 +1,6 @@
 package com.example.java11;
 
+@SuppressWarnings("unused")
 public class Exercise01 {
 	public static void main(String[] args) {
 	   Test test1 = (x,y) -> x+y;		
