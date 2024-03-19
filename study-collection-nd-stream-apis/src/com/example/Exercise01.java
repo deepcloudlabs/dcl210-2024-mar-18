@@ -14,7 +14,8 @@ public class Exercise01 {
 		// Set : Linear, Un-ordered, Unique
 		// Map : Associative: Key -> Value
 		// Deque: ~List, Queue (FIFO), Stack(LIFO)
-
+        // Note: Tree -> sorted
+		
 		// Thread-Unsafe Collections: Most of them fall in this group
 		// Thread-Safe Collections: ConcurrentHashMap,
 		// BlockingQueue,CopyOnWriteArrayList
