@@ -24,6 +24,8 @@ public class CalculatorApplication {
 						clazz.getInterfaces(),
 						new CachingHandler(proxy)
 						);
+		// jdk.proxy1.$Proxy0
+		System.out.println(proxy.getClass().getName());
 		System.out.println("3 + 5: %f".formatted(proxy.add(3, 5)));
 		System.out.println("3 + 5: %f".formatted(proxy.add(3, 5)));
 		System.out.println("3 + 2: %f".formatted(proxy.add(3, 2)));
