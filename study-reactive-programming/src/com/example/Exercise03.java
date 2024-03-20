@@ -43,7 +43,7 @@ class SlowSubscriber implements Flow.Subscriber<RichTradeEvent> {
 
 	@Override
 	public void onNext(RichTradeEvent event) {
-		System.err.println("SlowSubscriber has just received an event: %s".formatted(event));
+		System.err.println("[%s] SlowSubscriber has just received an event: %s".formatted(Thread.currentThread().getName(),event));
 		try {TimeUnit.SECONDS.sleep(5);}catch (Exception e) {}
 		System.err.println("SlowSubscriber has processed the event: %s".formatted(event));
 		subscription.request(1);
@@ -74,7 +74,7 @@ class FastSubscriber implements Flow.Subscriber<RichTradeEvent> {
 	
 	@Override
 	public void onNext(RichTradeEvent event) {
-		System.err.println("FastSubscriber has just received an event: %s".formatted(event));
+		System.err.println("[%s] FastSubscriber has just received an event: %s".formatted(Thread.currentThread().getName(),event));
 		System.err.println("FastSubscriber has processed the event: %s".formatted(event));
 		subscription.request(1);
 	}
