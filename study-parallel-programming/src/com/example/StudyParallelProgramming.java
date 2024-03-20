@@ -13,7 +13,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class StudyParallelProgramming extends Object {
 	private static final String FORMAT = "Method: %20s Volume: %12.1f Duration: %12d";
-	private static final int DATA_SIZE = 400_000_000;
+	private static final int DATA_SIZE = 40_000_000;
 	private static final int CORES = Runtime.getRuntime().availableProcessors();
 	private static final int DATA_SIZE_PER_CORE = DATA_SIZE / CORES;
 	private static final int LOOP_SIZE = 12;
