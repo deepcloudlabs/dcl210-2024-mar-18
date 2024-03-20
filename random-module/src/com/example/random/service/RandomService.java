@@ -1,5 +1,7 @@
 package com.example.random.service;
-
+/**
+ * 
+ */
 public interface RandomService {
 	int generate(int min,int max);
 	default int generate(int max) {
